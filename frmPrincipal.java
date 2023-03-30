@@ -23,7 +23,7 @@ public class frmPrincipal extends JFrame
 		//--------------------------------------------------------------------------------------------------------------------------//
 																	//TELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
-		super("Simulador de escalonamento de processos FCSC");
+		super("Simulador de escalonamento de processos FCFS");
 		Container tela = getContentPane();
 		tela.setLayout(new BorderLayout());
 		//--------------------------------------------------------------------------------------------------------------------------//
@@ -49,7 +49,7 @@ public class frmPrincipal extends JFrame
 		pnlPrcTabela.add(scrProcessos);
 		pnlProcessos.add(pnlPrcTabela, BorderLayout.WEST);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  									//CENTRO DA TELA -> TELA DE PROCESSOS -> BOTÕES//
+		  									//CENTRO DA TELA -> TELA DE PROCESSOS -> BOTï¿½ES//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlPrcBotoes = new JPanel();
 		pnlPrcBotoes.setLayout(new GridLayout(2,1));
@@ -80,39 +80,39 @@ public class frmPrincipal extends JFrame
 												}	
 											  );
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  										  //CENTRO DA TELA -> TELA DE MEMÓRIA//
+		  										  //CENTRO DA TELA -> TELA DE MEMï¿½RIA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlMemoria = new JPanel();
 		pnlMemoria.setLayout(new BorderLayout());
 		pnlCentro.add(pnlMemoria, BorderLayout.WEST);
 		pnlMemoria.setBorder(BorderFactory.createEtchedBorder(1));
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  									//CENTRO DA TELA -> TELA DE MEMÓRIA -> TÍTULO//
+		  									//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> Tï¿½TULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloMemoria = new JPanel();
 		pnlTituloMemoria.setLayout(new FlowLayout());
 		pnlMemoria.add(pnlTituloMemoria, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloMemoria = new JLabel("Memória");
+		JLabel lblTituloMemoria = new JLabel("Memï¿½ria");
 		pnlTituloMemoria.add(lblTituloMemoria);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		   							  //CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA PRINCIPAL//
+		   							  //CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA PRINCIPAL//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlMemoriaPrincipal = new JPanel();
 		pnlMemoriaPrincipal.setLayout(new BorderLayout());
 		pnlMemoria.add(pnlMemoriaPrincipal, BorderLayout.WEST);
 		pnlMemoriaPrincipal.setBorder(BorderFactory.createEtchedBorder(1));
 		//--------------------------------------------------------------------------------------------------------------------------//
-	  							//CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA PRINCIPAL -> TITULO//
+	  							//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA PRINCIPAL -> TITULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloMemoriaPrincipal = new JPanel();
 		pnlTituloMemoriaPrincipal.setLayout(new FlowLayout());
 		pnlMemoriaPrincipal.add(pnlTituloMemoriaPrincipal, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloMemoriaPrincipal = new JLabel("Memória principal");
+		JLabel lblTituloMemoriaPrincipal = new JLabel("Memï¿½ria principal");
 		pnlTituloMemoriaPrincipal.add(lblTituloMemoriaPrincipal);
 		//--------------------------------------------------------------------------------------------------------------------------//
-	  							//CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA PRINCIPAL -> TABELA//
+	  							//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA PRINCIPAL -> TABELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTabelaMemoriaPrincipal = new JPanel();
 		pnlTabelaMemoriaPrincipal.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -122,23 +122,23 @@ public class frmPrincipal extends JFrame
 		JScrollPane scrMemoriaPrincipal = new JScrollPane(objMemoriaPrincipal.getTable());
 		pnlTabelaMemoriaPrincipal.add(scrMemoriaPrincipal);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		   								//CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA SECUNDÁRIA//
+		   								//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA SECUNDï¿½RIA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlMemoriaSecundaria = new JPanel();
 		pnlMemoriaSecundaria.setLayout(new BorderLayout());
 		pnlMemoria.add(pnlMemoriaSecundaria, BorderLayout.EAST);
 		pnlMemoriaSecundaria.setBorder(BorderFactory.createEtchedBorder(1));
 		//--------------------------------------------------------------------------------------------------------------------------//
-	  							//CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA SECUNDÁRIA -> TITULO//
+	  							//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA SECUNDï¿½RIA -> TITULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloMemoriaSecundaria = new JPanel();
 		pnlTituloMemoriaSecundaria.setLayout(new FlowLayout());
 		pnlMemoriaSecundaria.add(pnlTituloMemoriaSecundaria, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloMemoriaSecundaria = new JLabel("Memória secundária");
+		JLabel lblTituloMemoriaSecundaria = new JLabel("Memï¿½ria secundï¿½ria");
 		pnlTituloMemoriaSecundaria.add(lblTituloMemoriaSecundaria);
 		//--------------------------------------------------------------------------------------------------------------------------//
-	  							//CENTRO DA TELA -> TELA DE MEMÓRIA -> MEMÓRIA SECUNDÁRIA -> TABELA//
+	  							//CENTRO DA TELA -> TELA DE MEMï¿½RIA -> MEMï¿½RIA SECUNDï¿½RIA -> TABELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTabelaMemoriaSecundaria = new JPanel();
 		pnlTabelaMemoriaSecundaria.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -155,7 +155,7 @@ public class frmPrincipal extends JFrame
 		pnlProcessador.setBorder(BorderFactory.createEtchedBorder(1));
 		pnlCentro.add(pnlProcessador, BorderLayout.CENTER);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  								 	 //CENTRO DA TELA -> PROCESSADOR -> TÍTULO//
+		  								 	 //CENTRO DA TELA -> PROCESSADOR -> Tï¿½TULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloProcessador = new JPanel();
 		pnlTituloProcessador.setLayout(new FlowLayout());
@@ -171,7 +171,7 @@ public class frmPrincipal extends JFrame
 		pnlFilaDeBloqueados.setBorder(BorderFactory.createEtchedBorder(1));
 		pnlProcessador.add(pnlFilaDeBloqueados, BorderLayout.WEST);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  								 //CENTRO DA TELA -> PROCESSADOR -> FILA DE BLOQUEADOS -> TÍTULO//
+		  								 //CENTRO DA TELA -> PROCESSADOR -> FILA DE BLOQUEADOS -> Tï¿½TULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloFilaDeBloqueados = new JPanel();
 		pnlTituloFilaDeBloqueados.setLayout(new FlowLayout());
@@ -196,23 +196,23 @@ public class frmPrincipal extends JFrame
 		pnlDetalhesProcessador.setLayout(new GridLayout(3,1));
 		pnlProcessador.add(pnlDetalhesProcessador, BorderLayout.CENTER);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  							//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUÇÃO//
+		  							//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUï¿½ï¿½O//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTempoDeExecucao = new JPanel();
 		pnlTempoDeExecucao.setLayout(new BorderLayout());
 		pnlTempoDeExecucao.setBorder(BorderFactory.createEtchedBorder(1));
 		pnlDetalhesProcessador.add(pnlTempoDeExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUÇÃO -> TÍTULO//
+		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUï¿½ï¿½O -> Tï¿½TULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloTempoDeExecucao = new JPanel();
 		pnlTituloTempoDeExecucao.setLayout(new FlowLayout());
 		pnlTempoDeExecucao.add(pnlTituloTempoDeExecucao, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloTempoDeExecucao = new JLabel("Tempo de Execução");
+		JLabel lblTituloTempoDeExecucao = new JLabel("Tempo de Execuï¿½ï¿½o");
 		pnlTituloTempoDeExecucao.add(lblTituloTempoDeExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUÇÃO -> TABELA//
+		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> TEMPO DE EXECUï¿½ï¿½O -> TABELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTabelaTempoDeExecucao = new JPanel();
 		pnlTabelaTempoDeExecucao.setLayout(new FlowLayout());
@@ -222,23 +222,23 @@ public class frmPrincipal extends JFrame
 		JScrollPane scrTempoDeExecucao = new JScrollPane(objTabelaTempoTotal.getTable());
 		pnlTabelaTempoDeExecucao.add(scrTempoDeExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  							//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUÇÃO//
+		  							//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUï¿½ï¿½O//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlEmExecucao = new JPanel();
 		pnlEmExecucao.setLayout(new BorderLayout());
 		pnlEmExecucao.setBorder(BorderFactory.createEtchedBorder(1));
 		pnlDetalhesProcessador.add(pnlEmExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUÇÃO -> TÍTULO//
+		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUï¿½ï¿½O -> Tï¿½TULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTituloEmExecucao = new JPanel();
 		pnlTituloEmExecucao.setLayout(new FlowLayout());
 		pnlEmExecucao.add(pnlTituloEmExecucao, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloEmExecucao = new JLabel("Em Execução");
+		JLabel lblTituloEmExecucao = new JLabel("Em Execuï¿½ï¿½o");
 		pnlTituloEmExecucao.add(lblTituloEmExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUÇÃO -> TABELA//
+		  						//CENTRO DA TELA -> PROCESSADOR -> DETALHES -> EM EXECUï¿½ï¿½O -> TABELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlTabelaEmExecucao = new JPanel();
 		pnlTabelaEmExecucao.setLayout(new FlowLayout());
@@ -259,12 +259,12 @@ public class frmPrincipal extends JFrame
 		//--------------------------------------------------------------------------------------------------------------------------//
 		objProcessador = new clsEscalonador(pnlClock, 1000, objTabelaProcessos, objProcessosBloqueados, objMemoriaPrincipal, objMemoriaSecundaria, objTabelaTempoTotal, objProcessoEmExecucao);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  													      //RODAPÉ DA TELA//
+		  													      //RODAPï¿½ DA TELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlInferior = new JPanel();
 		pnlInferior.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		//--------------------------------------------------------------------------------------------------------------------------//
-		  				   									//RODAPÉ DA TELA -> BOTÕES//
+		  				   									//RODAPï¿½ DA TELA -> BOTï¿½ES//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JButton btnSobre = new JButton("Sobre...");
 		pnlInferior.add(btnSobre);

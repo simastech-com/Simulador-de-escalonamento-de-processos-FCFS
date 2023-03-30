@@ -25,15 +25,15 @@ public class frmSobre extends JFrame
 		pnlTeoria.setLayout(new BorderLayout());
 		tela.add(pnlTeoria, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-		JLabel lblTituloTeoria = new JLabel("Sobre o modo FCSC de escalonamento");
+		JLabel lblTituloTeoria = new JLabel("Sobre o modo FCFS de escalonamento");
 		lblTituloTeoria.setHorizontalAlignment(SwingConstants.CENTER);
 		pnlTeoria.add(lblTituloTeoria, BorderLayout.NORTH); 
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JTextArea txtTeoria = new JTextArea();
 		txtTeoria.append(
-							"          O escalonamento FIFO (First-In-First-Out) ou FCSC (First-Come, First Served) é a forma mais elementar para escalonar processos e consiste em atender as tarefas na ordem em que estas chegam à fila de tarefas prontas.\n" +
-							"          Este  projeto  une  a  fila  de  processos  prontos  e  a  fila  de  processos  bloqueados em uma única fila  de   processos   bloqueados.   O  algoritmo   apresentado   representa   o   modo   de  escalonamento  FCSC cooperativo, no qual o processador executa uma tafera por vez.\n" +
-							"          Para  melhorar  o  desempenho, os processos são alocados na memória de acordo sua posição na fila de bloqueados. O processo em execução e os primeiros processos da fila de bloqueados são armazenados na  memória  principal.  Caso  a  memória principal fique lotada, os últimos processos da fila de  bloqueados são   armazenados   na   memória  secundária.  Para  que  esta  realocação  de  memória  (swap)  possa  ser executada, é   necessário   que  haja  na  memória  secundária  um  espaço  igual  ou  superior  ao   tamanho do maior processo."           
+							"          O escalonamento FIFO (First-In-First-Out) ou FCFS (First-Come, First Served) ï¿½ a forma mais elementar para escalonar processos e consiste em atender as tarefas na ordem em que estas chegam ï¿½ fila de tarefas prontas.\n" +
+							"          Este  projeto  une  a  fila  de  processos  prontos  e  a  fila  de  processos  bloqueados em uma ï¿½nica fila  de   processos   bloqueados.   O  algoritmo   apresentado   representa   o   modo   de  escalonamento  FCFS cooperativo, no qual o processador executa uma tafera por vez.\n" +
+							"          Para  melhorar  o  desempenho, os processos sï¿½o alocados na memï¿½ria de acordo sua posiï¿½ï¿½o na fila de bloqueados. O processo em execuï¿½ï¿½o e os primeiros processos da fila de bloqueados sï¿½o armazenados na  memï¿½ria  principal.  Caso  a  memï¿½ria principal fique lotada, os ï¿½ltimos processos da fila de  bloqueados sï¿½o   armazenados   na   memï¿½ria  secundï¿½ria.  Para  que  esta  realocaï¿½ï¿½o  de  memï¿½ria  (swap)  possa  ser executada, ï¿½   necessï¿½rio   que  haja  na  memï¿½ria  secundï¿½ria  um  espaï¿½o  igual  ou  superior  ao   tamanho do maior processo."           
 						);
 		txtTeoria.setEditable(false);
 		txtTeoria.setPreferredSize(new Dimension(600, 210));
@@ -42,33 +42,33 @@ public class frmSobre extends JFrame
 		JLabel lblTeorialn02 = new JLabel("");
 		pnlTeoria.add(txtTeoria, BorderLayout.CENTER); 
 		//--------------------------------------------------------------------------------------------------------------------------//
-							   						   //CENTRO DA TELA -> CRÉDITOS//
+							   						   //CENTRO DA TELA -> CRï¿½DITOS//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JPanel pnlCreditos = new JPanel();
 		pnlCreditos.setLayout(new BorderLayout());
 		pnlCreditos.setBorder(BorderFactory.createEtchedBorder(1));
 		tela.add(pnlCreditos, BorderLayout.CENTER);
 		//--------------------------------------------------------------------------------------------------------------------------//
-							   					  //CENTRO DA TELA -> CRÉDITOS -> TITULO//
+							   					  //CENTRO DA TELA -> CRï¿½DITOS -> TITULO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JLabel lblTituloCreditos = new JLabel("Desenvolvedor");
 		lblTituloCreditos.setHorizontalAlignment(SwingConstants.CENTER);
 		pnlCreditos.add(lblTituloCreditos, BorderLayout.NORTH);
 		//--------------------------------------------------------------------------------------------------------------------------//
-							   					  //CENTRO DA TELA -> CRÉDITOS -> TEXTO//
+							   					  //CENTRO DA TELA -> CRï¿½DITOS -> TEXTO//
 		//--------------------------------------------------------------------------------------------------------------------------//
 		JTextArea txtCreditos = new JTextArea();
 		txtCreditos.setEditable(false);
 		txtCreditos.append(
 							"Aluno: William Cardoso Simas (RA 200452).\n" +
-							"Curso: Engenharia da Computação - 7º termo - Noturno.\n" + 
+							"Curso: Engenharia da Computaï¿½ï¿½o - 7ï¿½ termo - Noturno.\n" + 
 							"Disciplina: Sistemas Operacionais.\n" +
 							"Orientador: Rafael Marcelino de Jesus.\n" + 
-							"Universidade: Centro Universitário Católico Salesiano Auxilium - Araçatuba."
+							"Universidade: Centro Universitï¿½rio Catï¿½lico Salesiano Auxilium - Araï¿½atuba."
 						  );
 		pnlCreditos.add(txtCreditos, BorderLayout.CENTER);
 	    //--------------------------------------------------------------------------------------------------------------------------//
-							   									//RODAPÉ DA TELA//
+							   									//RODAPï¿½ DA TELA//
 		//--------------------------------------------------------------------------------------------------------------------------//
     	JPanel pnlBotoes = new JPanel();
     	pnlBotoes.setLayout(new FlowLayout());
