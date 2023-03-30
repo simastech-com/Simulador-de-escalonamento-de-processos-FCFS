@@ -7,5 +7,3 @@ Este software simula o escalonamento de processos FIFO (First-In-First-Out) ou F
 Abaixo, o funcionamento do sistema. Clique na imagem para assistir o vídeo.
 
 [![Watch the video](https://img.youtube.com/vi/TtGq8uVIbuM/hqdefault.jpg)](https://www.youtube.com/watch?v=TtGq8uVIbuM)
-
-Imagem de teste baseada em: https://pixabay.com/pt/photos/cachorro-canino-bicho-de-estima%c3%a7%c3%a3o-5040008/
